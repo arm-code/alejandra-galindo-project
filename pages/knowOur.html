@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section>
+      <div><h1>Capital Campaign Inc. Board</h1></div>
+      <div class="img-container"><img class="know" src="../images/know.jpeg" alt="" /></div>
+
+      <div class="container">
+        <div>
+          <p class="para">
+            he purpose of the Father Yermo Capital Campaign Inc, is to provide
+            advice and guidance on fundraising strategies and activities and to
+            solicit, receive and maintain funds, and use and apply such funds
+            for the design, construction and maintenance of educational
+            facilities and construction projects at Father Yermo in El Paso,
+            Texas, as well as to establishment of scholarship programs for
+            students attending Father Yermo Schools. President Dr. Josefina V.
+            Tinajero Members Mr. Sergio Cossio Vice- President Mr. Jorge
+            Valenzuela Sr. Angelica Omaña, SSHJP Dr. Robert Urrea Secretary
+            Legal Advisor Sr. Yamila Trejo, SSHJP Mr. Eduardo Miranda Treasurer
+            Executive Director Armando Renteria Sr. Maria Jesus Mungia Father
+            Yermo Schools Advisory Board The Purpose of Father Yermo Schools In
+            the early 1950s, many Hispanic children in the neighborhood were
+            dropping out of school after elementary grades. Parents and the
+            Sisters saw the need to offer these children the possibility of
+            adequate curriculum, competitive skills to promote students to
+            further education; Father Yermo Elementary was born in 1958 in the
+            building that hosted the old Sacred Heart Orphanage. Two years
+            later, in 1960, Father Yermo High School opened its doors, in the
+            old quarters built for sisters’ refuge during the religious Mexican
+            persecution. Both campuses thrived, as children from the
+            neighborhood and from Juarez, the sister city, began graduating. The
+            new school buildings were inaugurated in 1958 and 1964.
+            Accreditation was pursued and obtained in 1966. The years went by,
+            and in 1988 Father Yermo Schools was the first Catholic School in
+            Texas to undergo the joint dual visit from SACS-CASI and Texas
+            Catholic Conference when TEA stopped accreditation of private
+            schools. Faher Yermo has consistently been accredited by TCCBED, and
+            is recognized as an institution that expands the excellence with
+            programs that teach students according to their talents and
+            aptitudes, and prepares them for their future professional
+            occupation, while they develop in a family Christian environment.
+            Father Yermo Schools has also witnessed the elevation of Father Jose
+            Maria de Yermo to sainthood. On May 21, 2000, in St. Peter’s
+            Basilica in Rome, Pope Saint John Paul II canonized Blessed Jose
+            Maria de Yermo as a Saint for the Universal Church. Father Yermo
+            Schools’ Family throughout the world joined in the celebrations. In
+            the new millennium, Father Yermo Schools have seen expansion and
+            improvements. The elementary added a new wing in order to broaden
+            its services. A Capital Campaign Board was formed in 2000 to
+            fundraise and built the Rudolph Miles Multipurpose Center
+            inaugurated in March 2006. In 2011, the Early Learning Center
+            building was blessed to host the lower elementary grades. The
+            Capital Campaign Board has fundraised to build the Multipurpose
+            Media Center-Library. Thousands of students have graduated from
+            Father Yermo Schools embodying core Catholic values, prepared to
+            pursue post-secondary education, comfortable with different
+            cultures, and with a deep sense of service that brings them close to
+            God and the Catholic Church.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+      // Cargar el footer
+      fetch('../components/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('footer').innerHTML = data;
+        });
+
+      // Cargar la barra de navegación
+      fetch('../components/navbar.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

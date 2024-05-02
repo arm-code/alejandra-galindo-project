@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section>
+      <div><h1>Capital Campaign Inc. Board</h1></div>
+
+      <div class="container">
+        <div>
+          <p class="para">
+            he purpose of the Father Yermo Capital Campaign Inc, is to provide
+            advice and guidance on fundraising strategies and activities and to
+            solicit, receive and maintain funds, and use and apply such funds
+            for the design, construction and maintenance of educational
+            facilities and construction projects at Father Yermo in El Paso,
+            Texas, as well as to establishment of scholarship programs for
+            students attending Father Yermo Schools. President Dr. Josefina V.
+            Tinajero Members Mr. Sergio Cossio Vice- President Mr. Jorge
+            Valenzuela Sr. Angelica Omaña, SSHJP Dr. Robert Urrea Secretary
+            Legal Advisor Sr. Yamila Trejo, SSHJP Mr. Eduardo Miranda Treasurer
+            Executive Director Armando Renteria Sr. Maria Jesus Mungia Father
+            Yermo Schools Advisory Board The Purpose of Father Yermo Schools
+            Advisory Board is to witness the mission of education, formation and
+            service of the school. The membership of the Board is to be
+            representative of the major areas of concern, such as: Mission &
+            Vision, Strategic Planning, Development & Marketing, Finance,
+            Facilities & Grounds and ancillary committees such as Tuition
+            Assistance & Scholarship, Nomination committees and others necessary
+            for the development and assessment of the school. Executive
+            Committee Finance Committee Development & Mr. Armando Renteria,
+            President Mr. Bill Carvajal Marketing Committee Mrs. Virgina Del
+            Rio, Secretary Mr. Jorge Valenzuela Mrs. Miriam G. Campos Mrs. Didi
+            Cortez Mrs. Claudia Valenzuela Strategic Planning Committee
+            Ancillary committees Mission &Vision Sr. Yamila Trejo Scholarship &
+            Tuition Assistance Committee Committee Dr. Teresa Cortez Sr. Maria
+            J.Munguia Sr. Yamila Trejo Sr. Angelica Omaña Mrs. Lily Campos Sr.
+            Angelica Omaña
+          </p>
+        </div>
+        <div><img src="../images/spartan-icon.jpg" alt="" /></div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+      // Cargar el footer
+      fetch('../components/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('footer').innerHTML = data;
+        });
+
+      // Cargar la barra de navegación
+      fetch('../components/navbar.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

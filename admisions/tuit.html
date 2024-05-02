@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section>
+      <div><h1>Tuition & Fees</h1></div>
+
+      <div class="container">
+        <div>
+          <p class="para">
+            Tuition and Fees 2022-2023 Registration Fees, Pre-k to 8th $435.00,
+            High School $535.00 Annual Tuition Plan A, In addition to this plan,
+            there is an agreement to participate in the Father Yermo School’s
+            annual Fundraising. 9th - 12th $4,650.00 Monthly $465.00 5th - 8th
+            $4,050.00 Monthly $405.00 Pre-k to 4th $3,800.00 Monthly $380.00
+            Annual Tuition Plan B. This plan exempts you from participation in
+            the school’s mandatory fundraising. 9th - 12th $5,150.00 Monthly
+            $515.00 5th - 8th $4,550.00 Monthly $455.00 Pre-k to 4th $4,300.00
+            Monthly $430.00 We also have a basic family rate; please contact us
+            if you have any questions.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+      // Cargar el footer
+      fetch('../components/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('footer').innerHTML = data;
+        });
+
+      // Cargar la barra de navegación
+      fetch('../components/navbar.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

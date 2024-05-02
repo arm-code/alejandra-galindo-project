@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section>
+      <div><h1>What to know about Father Yermo Schools.</h1></div>
+
+      <div class="container">
+        <div>
+          <p class="para">
+            Does Father Yermo School have Boys? Yes, Father Yermo School has
+            been a co-ed school Pre-K to 12th since 2000. Do you have to be a
+            catholic to attend Father Yermo School? No, Father Yermo School does
+            not discriminate on basis of race, color, nationality, origin or
+            religion. Though we are a Catholic School, we hold liturgies and
+            encourage our students to attend. Do you offer Financial Aid or
+            Scholarships? Yes, Father Yermo School offers Financial Aid and a
+            variety of Scholarships for students who qualify for monetary
+            assistance. Do you have a big class size? No, Father Yermo School
+            has small-size classes; we believe students learn foremost in small
+            class sizes. Are Nun’s part of the Teaching staff in school? Yes, 6
+            of our Sisters are part of the School Teaching Program, and 3 more
+            in administrative positions. They are qualified to fulfill their
+            roles at Father Yermo School. Do you have an After School program?
+            Yes, we offer after school program at our campus for elementary and
+            middle school students. Does Father Yermo School offer I-20 forms
+            for international students? Yes, Father Yermo School offers I-20
+            Form for Non-United States Citizens. All rules by the Point of Entry
+            must be followed before the student attends classes s. Do you have
+            Dual Credit classes? Yes, we offer a variety of Dual Credit classes
+            for high school students. Do students have access to the convent?
+            No, neither students nor staff has access to the convent. We respect
+            our Sisters' privacy and treat their space as out-of-campus
+            property. However, the chapel is used for liturgies, drama
+            performances Has Father Yermo ongoing enrollment? Yes, Father Yermo
+            has an ongoing enrollment for all grades.
+          </p>
+        </div>
+        <div><img src="../images/school_header.png" alt="" /></div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+      // Cargar el footer
+      fetch('../components/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('footer').innerHTML = data;
+        });
+
+      // Cargar la barra de navegación
+      fetch('../components/navbar.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

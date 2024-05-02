@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section>
+      <div><h1>Welcome
+        Hooray!!
+    </h1></div>
+
+      <div class="container">
+        <div>
+          <p class="para">
+            We are grateful for your interest in Father Yermo School, and we are pleased to provide you with additional information.
+
+ 
+
+            Our mission is to provide students with a unique family environment, the best academic preparation and an affordable program, while affirming their human dignity and Catholic values, in order to enable them to succeed in a multicultural and complex society.
+            
+             
+            
+            Father Yermo is a private co-ed Catholic School, with a diverse multi-cultural population committed to serve students.
+            
+             
+            
+            Father Yermo curriculum is noteworthy for its emphasis on independent thinking and commitment to the growth and achievement of all students.
+            
+             
+            
+            We welcome you and your family and encourage you to contact us if you have any questions.
+            
+            Central Office Administration
+            
+            (915) 532-6875
+          </p>
+        </div>
+        <div><img src="../images/spartan-icon.jpg" alt="" /></div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+      // Cargar el footer
+      fetch('../components/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('footer').innerHTML = data;
+        });
+
+      // Cargar la barra de navegación
+      fetch('../components/navbar.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
