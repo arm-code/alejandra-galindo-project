@@ -232,6 +232,14 @@ ul li ul li {
   overflow: hidden;
   z-index: -1;
 }
+
+
+.container-circles div:hover{
+  background-color: black;
+  color: #f0f0f0;
+} 
+
+
 .carousel-slide {
   display: flex;
   transition: transform 0.5s ease;
@@ -248,10 +256,11 @@ ul li ul li {
   height: 200px;
   background-color: #f0f0f0;
   padding: 20px;
+  text-align: center;
 }
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: #ad2620;
   border-radius: 50%;
   display: flex;
@@ -289,4 +298,19 @@ ul li ul li {
 .img-container{
   text-align: center;
   margin: 0;
+}
+
+.sections-container{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  
+}
+
+.sections-container div{
+  background-color: red;
+  padding: 15px;
+  color: #f0f0f0;
+  text-align: center;
+  height: 500px;
 }
