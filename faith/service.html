@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section>
+      <div><h1>Service Learning</h1></div>
+
+      <div class="container">
+        <div>
+          <p class="para">
+            Beginning at the 7th grade, all students are required to have
+            certain hours or projects of service to any local non-profit agency
+            in order to involve themselves in the needs of others, and in the
+            way they can fulfill themselves in a Christian way. The integration
+            of academic learning and relevant service activities combine human
+            dignity with self reward. Service Learning is an amazing way to
+            learn the fundamental concepts of giving and collaborating. It gives
+            students valuable insights into the community and real world.
+            Community Service also helps to combat depression, stress and
+            anxiety. It also increases self confidence and gives a sense of
+            purpose. Community service provides an opportunity to be an active
+            part of the community. Oder ways to Serve at Father Yermo Schools:
+            Campus ministry: Students participate in different groups that
+            relate to their religion program, such as, Missionary Group, Altar
+            Server Preparation and Holy Childhood Association. Students also
+            practice stewardship by visiting the sick, distribution of goods,
+            singing for the elderly, and collection for missions. Chaplains.
+            Students from 9th-12th grade may apply to participate in the
+            Chaplains Club. The program has evolved since 1960 and was founded
+            originally to enhance the spiritual life of the school by creating a
+            Christian environment. Chaplains motivate the life of prayer, engage
+            in charity and missionary work, participate in social issues
+            movements, plus other related social activities. Tutoring Program.
+            Father Yermo high school students are organized under a coordinator
+            to help other students to keep up with their school assignments,
+            homework and other skills that need improvement. Student tutors give
+            their time and knowledge as a form of service and Christian
+            brotherhood without any pay or retribution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+      // Cargar el footer
+      fetch('../components/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('footer').innerHTML = data;
+        });
+
+      // Cargar la barra de navegación
+      fetch('../components/navbar.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
